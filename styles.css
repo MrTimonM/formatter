@@ -1,25 +1,33 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f8fb;
+  /* background: #f4f8fb; */ /* Old background */
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); /* New gradient */
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 1rem; /* Added padding for smaller screens */
 }
 
 .container {
   max-width: 800px;
-  width: 90%;
+  width: 100%; /* Changed from 90% for better use of padding on body */
   background: #fff;
   padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Slightly adjusted shadow */
   border-radius: 1rem;
   text-align: center;
 }
 
 h1 {
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */ /* Old margin */
+  margin-top: 0; /* Remove default top margin */
+  margin-bottom: 2rem; /* Increased bottom margin */
   color: #2c3e50;
 }
 
@@ -44,17 +52,25 @@ textarea:focus {
 button {
   background-color: #3498db;
   color: white;
-  padding: 0.8rem 1.6rem;
-  margin-top: 0.5rem;
+  padding: 0.9rem 1.8rem; /* Slightly increased padding */
+  margin-top: 1rem; /* Increased top margin */
+  margin-left: 0.25rem; /* Added for spacing between buttons if they wrap */
+  margin-right: 0.25rem; /* Added for spacing between buttons if they wrap */
   border: none;
   border-radius: 0.75rem;
   font-size: 1rem;
+  font-weight: 500; /* Added font-weight */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Smoother transition */
 }
 
 button:hover {
   background-color: #2980b9;
+  transform: translateY(-2px); /* Add subtle lift effect */
+}
+
+button:active {
+  transform: translateY(-1px); /* Slight press effect */
 }
 
 .copy-btn {
@@ -63,4 +79,5 @@ button:hover {
 
 .copy-btn:hover {
   background-color: #27ae60;
+  transform: translateY(-2px); /* Consistent hover effect */
 }
