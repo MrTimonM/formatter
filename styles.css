@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f8fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  resize: vertical;
+  font-size: 1rem;
+  font-family: monospace;
+  min-height: 150px;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.copy-btn {
+  background-color: #2ecc71;
+}
+
+.copy-btn:hover {
+  background-color: #27ae60;
+}
