@@ -10,11 +10,11 @@
   <div class="container">
     <h1>HTTP Header Formatter</h1>
 
-    <textarea id="inputHeaders" placeholder="Paste your headers (key\\nvalue format) here..."></textarea>
+    <textarea id="inputHeaders" placeholder="Paste your headers (key\\nvalue format) here..." aria-label="Raw HTTP headers input"></textarea>
 
     <button onclick="formatHeaders()">Format Headers</button>
 
-    <textarea id="outputHeaders" readonly placeholder="Formatted headers will appear here..."></textarea>
+    <textarea id="outputHeaders" readonly placeholder="Formatted headers will appear here..." aria-label="Formatted HTTP headers output"></textarea>
 
     <button class="copy-btn" onclick="copyToClipboard()">Copy Formatted Headers</button>
   </div>
